@@ -1,0 +1,25 @@
+# Server settings (ServerProperties)
+server:
+  port: 80
+  address: 127.0.0.1
+  sessionTimeout: 30
+  contextPath: /
+
+  # Tomcat specifics
+  tomcat:
+    accessLogEnabled: false
+    protocolHeader: x-forwarded-proto
+    remoteIpHeader: x-forwarded-for
+    basedir:
+    backgroundProcessorDelay: 30 # secs
+
+#spring:
+#  datasource:
+#    url: 1
+#    password: 1
+#    username: 1
+#    driver-class-name: 1
+#spring:
+#  mvc:
+#    favicon:
+#      enabled:false
